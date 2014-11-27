@@ -1,0 +1,43 @@
+body {
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+}
+
+.tweets_container {
+  background-color: #FBFBFB;
+  height: 100%;
+  width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+.tweet {
+  background-color: #F9F9F9;
+  height: 70px;
+  margin-top: 10px;
+  vertical-align: center;
+  padding-top: 10px;
+}
+
+.tweet-img {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+  float: left;
+}
+
+.tweet-duration {
+  margin-top: 10px;
+  width: 50px;
+  float: right;
+}
+
+.tweet-header {
+  height: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+}
