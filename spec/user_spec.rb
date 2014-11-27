@@ -9,5 +9,8 @@ describe User do
     it 'can form a uri object when given a username' do
       expect(user.uri.class).to eq URI::HTTPS
     end
+    it 'gets an array containing each repo from github' do
+      expect(user.repos).to be_kind_of Array
+    end
   end
 end
