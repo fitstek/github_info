@@ -12,5 +12,14 @@ describe User do
     it 'gets an array containing each repo from github' do
       expect(user.repos).to be_kind_of Array
     end
+    it 'gives the languages in the from an array' do
+      expect(user.languages).to be_kind_of Array
+    end
+    it 'the number of languages is equal to the number of repos' do
+      expect(user.languages.count).to eq user.repos.count
+    end
+    it 'gives the programming languages as array elements' do
+      expect(user.languages).to include("Ruby")
+    end
   end
 end

@@ -20,4 +20,8 @@ class User
     end
     JSON.parse(response.body)
   end
+
+  def languages
+    repos.map {|repo| repo["language"]}
+  end
 end
