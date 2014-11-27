@@ -21,5 +21,8 @@ describe User do
     it 'gives the programming languages as array elements' do
       expect(user.languages).to include("Ruby")
     end
+    it 'gives the programming language that has the most occurance' do
+      expect(user.fav_language).to eq "Ruby"
+    end
   end
 end

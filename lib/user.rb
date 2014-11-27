@@ -24,4 +24,8 @@ class User
   def languages
     repos.map {|repo| repo["language"]}
   end
+
+  def fav_language
+    languages.group_by { |e| e }.values.max_by(&:size).first
+  end
 end
